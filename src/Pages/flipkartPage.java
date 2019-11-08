@@ -19,6 +19,11 @@ public class flipkartPage {
 	By increaseQuantity = By.xpath("//div[@class='_3md1dr']/button[2]");
 	By amount = By.xpath("//div[@class='hJYgKM\']/span");
 	
+	By flipkartSearchbar = By.xpath("//*[@title='Search for products, brands and more']");
+	By searchButton = By.className("vh79eN");
+	By phone = By.xpath("//*[contains(text(),'Apple iPhone 6s (32GB) - Space Grey')]");
+	By price = By.xpath("//div[@class='_1uv9Cb']/div[@class='_1vC4OE _2rQ-NK']");
+	
 	
 	public flipkartPage(WebDriver driver)
 	{
@@ -78,6 +83,32 @@ public class flipkartPage {
 	{
 		WebElement amount1 = driver.findElement(amount);
 		System.out.println("Total Payable"+amount1.getText());
+	}
+	
+	
+	
+	public void searchPhone()
+	{
+		WebElement search = driver.findElement(flipkartSearchbar);
+		search.sendKeys("Apple iPhone 6s (32GB)");		
+	}
+	
+	public void clickSearch()
+	{
+		WebElement searchBtn = driver.findElement(searchButton);
+		searchBtn.click();
+	}
+	
+	public void findPhone()
+	{
+		WebElement findPhn = driver.findElement(phone);
+		findPhn.click();
+	}
+	
+	public void printPrice()
+	{
+		WebElement cost = driver.findElement(price);
+		System.out.println("Price on Flipkart "+cost.getText());
 	}
 	
 }
