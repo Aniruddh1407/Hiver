@@ -45,7 +45,8 @@ public class flipkartPage {
 		Thread.sleep(5000);
 		
 		// Since couldnt find Pixel. Took a random phone (Redmi 8)
-				WebElement submenu1 = driver.findElement(submenu);
+				
+		WebElement submenu1 = driver.findElement(submenu);
 				submenu1.click();
 				Thread.sleep(5000);
 				WebElement phonemodel1 = driver.findElement(phonemodel);

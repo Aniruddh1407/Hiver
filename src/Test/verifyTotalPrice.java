@@ -16,6 +16,7 @@ WebDriver driver;
 	
 	@BeforeMethod
 	public void setup()
+	
 	{
 		System.setProperty("webdriver.chrome.driver", "/Users/aniruddhkumar.a/Downloads/chromedriver");
 		driver = new ChromeDriver();

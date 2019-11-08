@@ -36,6 +36,7 @@ public class comparePrice {
 		amazonpage.findPhone();
 		
 		flipkartPage flipkartpage = new flipkartPage(driver);
+		
 		flipkartpage.windowSwitch();
 		
 		amazonpage.printPrice();

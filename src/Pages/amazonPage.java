@@ -19,8 +19,8 @@ public class amazonPage {
 	By phone = By.xpath("//*[contains(text(),'Apple iPhone 6s (32GB) - Space Grey')]");
 	By price = By.xpath("//span[@class='a-size-medium a-color-price priceBlockDealPriceString']");
 
-	
 	public void searchPhone()
+	
 	{
 		WebElement search = driver.findElement(searchBar);
 		search.sendKeys("Apple iPhone 6s (32GB)");		
